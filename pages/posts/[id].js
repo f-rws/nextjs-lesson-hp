@@ -1,13 +1,12 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Link from 'next/link';
-import { Layout } from '../../components/Layout';
+import Layout from '../../components/Layout';
 
 export default function Post({ post }) {
   if (!post) {
     return <div>Loading...</div>;
   }
 
-  console.log(post);
   return (
     <Layout title={post.title}>
       <p className="m-4">

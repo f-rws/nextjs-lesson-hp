@@ -1,9 +1,9 @@
-import { Layout } from '../components/Layout';
+import Layout from '../components/Layout';
 import Image from 'next/image';
 import styles from './Contact.module.scss';
 import cn from 'classnames';
 
-const Contact = () => {
+export default function Contact() {
   return (
     <Layout title={'Contact'}>
       <div className={styles.wrapper}>
@@ -81,6 +81,4 @@ const Contact = () => {
       </div>
     </Layout>
   );
-};
-
-export default Contact;
+}

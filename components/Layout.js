@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './Layout.module.scss';
 import Image from 'next/image';
 
-export const Layout = ({ children, title = 'HP by next.js' }) => {
+export default function Layout({ children, title = 'HP by next.js' }) {
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -42,4 +42,4 @@ export const Layout = ({ children, title = 'HP by next.js' }) => {
       </footer>
     </div>
   );
-};
+}
